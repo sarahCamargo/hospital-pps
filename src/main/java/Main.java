@@ -5,6 +5,7 @@ import ifsc.pps.hospital.consulta.ConsultaObserver;
 import ifsc.pps.hospital.medico.Medico;
 import ifsc.pps.hospital.medico.MedicoAdapter;
 import ifsc.pps.hospital.paciente.Paciente;
+import ifsc.pps.hospital.paciente.PacienteBuilder;
 
 import java.time.LocalDateTime;
 
@@ -12,13 +13,13 @@ public class Main {
     public static void main(String[] args) {
         Hospital hospital = HospitalController.getInstance();
 
-        Paciente paciente1 = new Paciente.PacienteBuilder()
+        Paciente paciente1 = new PacienteBuilder()
                 .setNome("Renato Simões")
                 .setIdade(40)
                 .setHistoricoMedico("Asma")
                 .build();
 
-        Paciente paciente2 = new Paciente.PacienteBuilder()
+        Paciente paciente2 = new PacienteBuilder()
                 .setNome("Sarah Camargo")
                 .setIdade(23)
                 .setHistoricoMedico("Nenhum")

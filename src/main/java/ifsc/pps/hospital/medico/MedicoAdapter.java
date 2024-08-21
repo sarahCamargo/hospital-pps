@@ -1,6 +1,6 @@
 package ifsc.pps.hospital.medico;
 
-public class MedicoAdapter implements SistemaExternoMedico{
+public class MedicoAdapter implements SistemaExternoMedico {
     private final Medico medico;
 
     public MedicoAdapter(Medico medico) {
